@@ -40,7 +40,7 @@ specific suggestions to improve it, powered by Google Gemini Flash.
 
 ## Notes
 - Scanned/image-only resumes can't be read (ATS systems can't read them either).
-- The model name is set in `app.py` (`MODEL_NAME`); change it if Google updates model names.
+- The app uses `gemini-3.8-flash` and automatically falls back to `gemini-flash-latest` if a model is retired. To force a specific model, add `GEMINI_MODEL = "model-name"` to your Streamlit secrets.
 - Scores are AI estimates, not the output of any real ATS.
 
 ## Files
